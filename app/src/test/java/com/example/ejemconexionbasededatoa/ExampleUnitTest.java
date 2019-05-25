@@ -1,4 +1,4 @@
-package com.example.nuevoscontroladores;
+package com.example.ejemconexionbasededatoa;
 
 import org.junit.Test;
 
