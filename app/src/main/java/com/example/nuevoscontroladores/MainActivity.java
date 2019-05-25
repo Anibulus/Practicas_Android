@@ -4,7 +4,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Adapter;
+<<<<<<< HEAD
 import android.widget.AdapterView;
+=======
+>>>>>>> af52b00f6bd65c5c78fc2f8eb65b636d7cacf455
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -79,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
             }//Termina el metodo on clicj\k
         });//Termina el btn on click
 
+<<<<<<< HEAD
         spOciones.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -101,5 +105,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+=======
+>>>>>>> af52b00f6bd65c5c78fc2f8eb65b636d7cacf455
     }//fin del metodo princiapl
 }//fin de la clase
