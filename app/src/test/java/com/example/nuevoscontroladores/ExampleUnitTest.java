@@ -1,4 +1,4 @@
-package com.example.holamundo2;
+package com.example.nuevoscontroladores;
 
 import org.junit.Test;
 
