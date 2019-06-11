@@ -1,5 +1,6 @@
 package com.example.ejemconexionbasededatoa;
 
+<<<<<<< HEAD
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
@@ -22,10 +23,18 @@ public class MainActivity extends AppCompatActivity {
     ProgressBar pbInicio;
     conexionSQL con;
 
+=======
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class MainActivity extends AppCompatActivity {
+
+>>>>>>> 96ae4aa0c75834514dbda548da6d33df13d7221c
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+<<<<<<< HEAD
 
         txtUsu=(EditText)findViewById(R.id.txtUsuario);
         txtContra=(EditText)findViewById(R.id.txtContrasena);
@@ -102,3 +111,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 }//Fin de la clase
+=======
+    }
+}
+>>>>>>> 96ae4aa0c75834514dbda548da6d33df13d7221c
