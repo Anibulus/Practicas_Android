@@ -1,6 +1,3 @@
 <resources>
-    <string name="app_name">holaMundo2</string>
-    <string name="hola_mundo">Hola Mundo</string>
-    <string name="enviar">Enviar</string>
-    <string name="nombre">Nombre</string>
+    <string name="app_name">IndiceDeMasaCorporal</string>
 </resources>
