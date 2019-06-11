@@ -27,11 +27,7 @@ public class MainActivity extends AppCompatActivity {
         btnEstadistica.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-<<<<<<< HEAD
                 Intent estadistica=new Intent(MainActivity.this,Main3Activity.class);
-=======
-                Intent estadistica=new Intent(MainActivity.this,Main2Activity.class);
->>>>>>> d3737ae1b659f6b72f1425142f7b5b218c228b51
                 startActivity(estadistica);
                 //cambiar el activity
             }
@@ -40,11 +36,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent verTodos=new Intent(MainActivity.this,Main2Activity.class);
-<<<<<<< HEAD
                 //startActivity(verTodos);
-=======
-                startActivity(verTodos);
->>>>>>> d3737ae1b659f6b72f1425142f7b5b218c228b51
             }
         });
 
