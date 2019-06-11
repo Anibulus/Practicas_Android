@@ -61,6 +61,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+<<<<<<< HEAD
+=======
+    <EditText
+        android:id="@+id/txtIMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="false"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Indice"
+        android:inputType="textPersonName"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.514" />
+
+>>>>>>> d3737ae1b659f6b72f1425142f7b5b218c228b51
     <Button
         android:id="@+id/btnGuardar"
         android:layout_width="wrap_content"
@@ -109,6 +132,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.39" />
+<<<<<<< HEAD
 
     <TextView
         android:id="@+id/txtIMC"
@@ -122,4 +146,6 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+=======
+>>>>>>> d3737ae1b659f6b72f1425142f7b5b218c228b51
 </android.support.constraint.ConstraintLayout>

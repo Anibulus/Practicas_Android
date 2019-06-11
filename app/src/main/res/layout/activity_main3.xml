@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Main3Activity">
 
+<<<<<<< HEAD
     <TextView
         android:id="@+id/numBP"
         android:layout_width="93dp"
@@ -171,4 +172,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtO3"
         app:layout_constraintVertical_bias="0.238" />
+=======
+>>>>>>> d3737ae1b659f6b72f1425142f7b5b218c228b51
 </android.support.constraint.ConstraintLayout>

@@ -7,19 +7,28 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+<<<<<<< HEAD
 import android.widget.TextView;
+=======
+>>>>>>> d3737ae1b659f6b72f1425142f7b5b218c228b51
 import android.widget.Toast;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
+<<<<<<< HEAD
 
 
 public class Main2Activity extends AppCompatActivity {
     Button btnCalcular, btnGuardar,btnGoBack;
     EditText nombre;
     TextView indice;
+=======
+public class Main2Activity extends AppCompatActivity {
+    Button btnCalcular, btnGuardar,btnGoBack;
+    EditText nombre, indice;
+>>>>>>> d3737ae1b659f6b72f1425142f7b5b218c228b51
     EditText altura;
     EditText peso;
     double imc;
@@ -30,7 +39,11 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         nombre=(EditText)findViewById(R.id.txtNombre);
+<<<<<<< HEAD
         indice=(TextView)findViewById(R.id.txtIMC);
+=======
+        indice=(EditText)findViewById(R.id.txtIMC);
+>>>>>>> d3737ae1b659f6b72f1425142f7b5b218c228b51
         altura=(EditText)findViewById(R.id.numEstatura);
         peso=(EditText)findViewById(R.id.numPeso);
         btnCalcular=(Button)findViewById(R.id.btnCalcular2);
@@ -41,6 +54,7 @@ public class Main2Activity extends AppCompatActivity {
         btnCalcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+<<<<<<< HEAD
                 if(!altura.getText().toString().equals("")&&!peso.getText().toString().equals("")) {
                     imc = Double.parseDouble(peso.getText().toString()) / ((Double.parseDouble(altura.getText().toString())) * Double.parseDouble(altura.getText().toString()));
                     String coso=String.valueOf(imc);
@@ -49,6 +63,14 @@ public class Main2Activity extends AppCompatActivity {
                     imc=Double.parseDouble(coso);
                     indice.setText("IMC: "+String.valueOf(imc));
                     //Toast.makeText(getApplicationContext(), "El IMC es de:" + imc, Toast.LENGTH_LONG).show();
+=======
+                //imc=peso*(Double.parseDouble(Double.parseDouble(String.valueOf(altura))*Double.parseDouble(String.valueOf(altura)));
+                //double v1=Double.parseDouble(altura.getText().toString())
+                if(!altura.getText().toString().equals("")&&!peso.getText().toString().equals("")) {
+                    imc = Double.parseDouble(peso.getText().toString()) / ((Double.parseDouble(altura.getText().toString())) * Double.parseDouble(altura.getText().toString()));
+                    indice.setText(String.valueOf(imc));
+                    Toast.makeText(getApplicationContext(), "El IMC es de:" + imc, Toast.LENGTH_LONG).show();
+>>>>>>> d3737ae1b659f6b72f1425142f7b5b218c228b51
                 }else{
                     Toast.makeText(getApplicationContext(), "Llenar minimo los campos de Estatura y Peso", Toast.LENGTH_LONG).show();
                 }
@@ -57,9 +79,15 @@ public class Main2Activity extends AppCompatActivity {
         btnGuardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+<<<<<<< HEAD
                 if (indice.length()>5) {
                     operacionRegistro op = new operacionRegistro();
                     op.execute("");
+=======
+                if (!indice.getText().toString().equals("")) {
+                    operacionRegistro op = new operacionRegistro();
+                    //op.execute();
+>>>>>>> d3737ae1b659f6b72f1425142f7b5b218c228b51
                 }else{
                     Toast.makeText(getApplicationContext(), "Es necesario calcular antes de Guardar", Toast.LENGTH_LONG).show();
                 }
@@ -81,11 +109,14 @@ public class Main2Activity extends AppCompatActivity {
         }
 
         public void onPostExecute(String r){
+<<<<<<< HEAD
             indice.setText("IMC: ");
             Toast.makeText(getApplicationContext(),r,Toast.LENGTH_LONG).show();
             nombre.setText("");
             peso.setText("");
             altura.setText("");
+=======
+>>>>>>> d3737ae1b659f6b72f1425142f7b5b218c228b51
 
         }
 
@@ -93,6 +124,7 @@ public class Main2Activity extends AppCompatActivity {
         @Override
         protected String doInBackground(String... strings) {
             Connection con=conexion.CONN();
+<<<<<<< HEAD
             System.out.println("Cree la conexion");
             if(con!=null){
                 try {
@@ -110,12 +142,31 @@ public class Main2Activity extends AppCompatActivity {
                 } catch (SQLException e) {
                     msj="ocurrio un error en la base de datos";
                     //Toast.makeText(getApplicationContext(),"Ocurrio un error durante el proceso",Toast.LENGTH_LONG).show();
+=======
+            if(con!=null){
+                try {
+                    PreparedStatement ps=con.prepareStatement("insert into registro (nombre, peso, estatura, imc) values (?, ?, ?, ?)");
+                    ps.setString(1,nombre.toString());
+                    ps.setDouble(2,Double.parseDouble(peso.getText().toString()));
+                    ps.setDouble(3,Double.parseDouble(altura.getText().toString()));
+                    ps.setDouble(4,imc);
+                    if(ps.executeUpdate()>0){
+                        Toast.makeText(getApplicationContext(),"Se registro correctamente",Toast.LENGTH_LONG).show();
+                    }
+                    con.close();
+                } catch (SQLException e) {
+                    Toast.makeText(getApplicationContext(),"Ocurrio un error durante el proceso",Toast.LENGTH_LONG).show();
+>>>>>>> d3737ae1b659f6b72f1425142f7b5b218c228b51
                     e.printStackTrace();
                 }
             }else{
                 //No conecto a la base de datos
+<<<<<<< HEAD
                 msj="No conecto la base de datos";
                 //Toast.makeText(getApplicationContext(),"No se conecto a la base de datos",Toast.LENGTH_LONG).show();
+=======
+                Toast.makeText(getApplicationContext(),"No se conecto a la base de datos",Toast.LENGTH_LONG).show();
+>>>>>>> d3737ae1b659f6b72f1425142f7b5b218c228b51
             }
             return msj;
         }

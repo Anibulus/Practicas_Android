@@ -1,5 +1,6 @@
 package com.example.indicedemasacorporal;
 
+<<<<<<< HEAD
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
@@ -23,11 +24,18 @@ public class Main3Activity extends AppCompatActivity {
     double bpn, pnn, spn, o1n, o2n, o3n;//Porcentajes
     conexionSQL conexion;
     buscarTodos b;
+=======
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class Main3Activity extends AppCompatActivity {
+>>>>>>> d3737ae1b659f6b72f1425142f7b5b218c228b51
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
+<<<<<<< HEAD
         conexion=new conexionSQL();
         btnSalir=(Button)findViewById(R.id.btnBack);
         bp=(TextView)findViewById(R.id.numBP);//>18.5
@@ -117,4 +125,7 @@ public class Main3Activity extends AppCompatActivity {
 
         }
     }
+=======
+    }//Fin del metodo principal
+>>>>>>> d3737ae1b659f6b72f1425142f7b5b218c228b51
 }//Fin de la clase
