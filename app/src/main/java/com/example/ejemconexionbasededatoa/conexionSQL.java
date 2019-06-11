@@ -1,4 +1,4 @@
-package com.example.indicedemasacorporal;
+package com.example.ejemconexionbasededatoa;
 
 import android.annotation.SuppressLint;
 import android.os.StrictMode;
@@ -8,10 +8,16 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+/*poner permisos para la conexion a la base de datos en android/app/minifests/androidManifest.xml
+poner el driver desde project/app/libs/-AddLibrary
+* <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+* */
+
 public class conexionSQL {
-    String ip = "192.168.100.138:1433";//conectarse a internet y poner la ip que me asignen aqui - debe ser del servidor
+    String ip = "192.168.43.12:1433";//conectarse a internet y poner la ip que me asignen aqui - debe ser del servidor
     String classs = "net.sourceforge.jtds.jdbc.Driver";
-    String db = "imcDB";
+    String db = "empresa";
     String un = "sa";
     String password = "12345";
 
@@ -35,4 +41,4 @@ public class conexionSQL {
         }
         return conn;
     }
-}//Fin de la clase
+}

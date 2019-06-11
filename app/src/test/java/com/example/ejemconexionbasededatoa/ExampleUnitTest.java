@@ -1,4 +1,4 @@
-package com.example.indicedemasacorporal;
+package com.example.ejemconexionbasededatoa;
 
 import org.junit.Test;
 
