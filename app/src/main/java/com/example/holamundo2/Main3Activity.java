@@ -8,28 +8,29 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class Main3Activity extends AppCompatActivity {
+    //Button btnRegresar;
+    //TextView etiqueta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
-        Button btnRegresar;
-        TextView etiqueta;
 
-        Bundle b=new Bundle();
+
+        //Bundle b=new Bundle();
         //b.getIntent().getExtras();
-        btnRegresar=(Button)findViewById(R.id.btnEnviar);
+       // btnRegresar=(Button)findViewById(R.id.btnEnviar);
 
-        etiqueta=(TextView)findViewById(R.id.txtMensaje);
-        etiqueta.setText(b.getString("nombre"));
+        //etiqueta=(TextView)findViewById(R.id.txtMensaje);
+        //etiqueta.setText(b.getString("nombre"));
 
         //Esta funcion cambia de ventana
-        btnRegresar.setOnClickListener(new View.OnClickListener() {
+        /*btnRegresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent ventana = new Intent (Main3Activity.this,MainActivity.class);
                 startActivity(ventana);
             }
-        });
+        });*/
     }
 }
